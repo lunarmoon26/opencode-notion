@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/openclaw/mcporter/main/mcporter.schema.json",
+  "mcpServers": {
+    "notion": {
+      "description": "Official hosted Notion MCP (workspace access via OAuth)",
+      "baseUrl": "https://mcp.notion.com/mcp",
+      "auth": "oauth"
+    }
+  },
+  "imports": []
+}

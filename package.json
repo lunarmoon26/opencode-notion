@@ -1,0 +1,24 @@
+{
+  "name": "opencode-notion",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "auth": "mcporter --config plugin/notion.mcp.json auth notion",
+    "auth:headless": "mcporter --config plugin/notion.mcp.json auth notion --no-browser",
+    "mcp": "mcporter --config plugin/notion.mcp.json",
+    "check": "tsc --noEmit",
+    "test": "bun test",
+    "skills:extract": "python3 scripts/extract-skill.py",
+    "export:markdown": "python3 skills/notion-markdown-export/scripts/export_markdown.py --config plugin/notion.mcp.json --mcporter ./node_modules/.bin/mcporter",
+    "test:python": "python3 -m unittest discover -s tests -p 'test_*.py' -v"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.0.31",
+    "mcporter": "0.15.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.11",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": ["./plugin/notion.ts"],
+  "skills": ["./skills"],
+  "permissions": [
+    { "action": "notion.write", "resource": "*", "effect": "ask" }
+  ]
+}
